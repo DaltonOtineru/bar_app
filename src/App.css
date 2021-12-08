@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* HEADER START */
+header {
+  background-color: #06111c;
+  overflow: auto;
+  color: #beac74;
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  float: left;
+  padding: 2rem 12rem;
+}
+nav {
+  text-decoration: none;
+  float: right;
+  padding: 2rem 10rem;
+}
+a {
+  text-decoration: none;
+  padding: 0 2rem;
+  color: #beac74;
+  font-weight: 300;
+}
+a:hover {
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* HEADER END */
+
+/* HERO START */
+
+.hero-section {
+  height: 95vh;
+}
+
+.hero-container {
+  height: 70vh;
+}
+.hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./img/bottle-bg.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  height: 100%;
+  z-index: -10;
+  position: relative;
+}
+.overlay {
+  position: absolute;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* color: #06111c; */
+  /* opacity: 0.9; */
+}
+.inner {
+  border: 2px solid #beac74;
+
+  padding: 1rem 2rem;
+}
+.border {
+  background: url(./img/specks.webp);
+  opacity: 1;
+  padding: 4rem 3rem;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  min-width: 445px;
 }
 
-.App-link {
-  color: #61dafb;
+.border span {
+  color: #beac74;
+  margin: 0 auto;
+  opacity: 1;
+  font-weight: 300;
+}
+.border h1 {
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1.1;
+  font-size: 80px;
+}
+.est {
+  padding-bottom: 1rem;
+  color: #beac74 !important;
+  letter-spacing: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.address {
+  display: block;
+  line-height: 1.8;
+}
+/* HERO END */
+
+/* ABOUT US START */
+
+.about-wrap {
+  background: url(./img/specks.webp);
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.about-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+.top-info {
+  text-align: center;
+  padding: 6rem 0;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+.title {
+  color: #beac74;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.institution {
+  color: #fff;
+  font-size: 32px;
+  letter-spacing: 0.25em;
+  margin-bottom: 2rem;
+}
+.top-info p {
+  color: #beac74;
+  line-height: 1.8;
+  font-weight: 200;
+}
+
+/* HAPPY HOUR START  */
+
+.happyhr-container {
+  display: flex;
+  margin: 3rem auto;
+  max-width: 1250px;
+  padding-bottom: 5rem;
+}
+.beer-photo {
+  padding-right: 4rem;
+}
+.happyhr-info {
+  padding-left: 4rem;
+}
+.beer-tuesday {
+  color: #fff;
+  font-size: 32px;
+  letter-spacing: 0.25em;
+  margin-bottom: 2rem;
+}
+.happyhr-info p {
+  color: #beac74;
+  line-height: 1.8;
+  font-weight: 200;
+}
+#beer-img {
+  opacity: 0.8;
+}
+/* HAPPY HOUR END */
+
+/* LIVE SHOWS START */
+
+.shows-container {
+  display: flex;
+  margin: 3rem auto;
+  max-width: 1250px;
+  padding-bottom: 5rem;
+}
+.shows-photo {
+  padding-left: 4rem;
+}
+.shows-info {
+  padding-right: 4rem;
+}
+.next-show {
+  color: #fff;
+  font-size: 32px;
+  letter-spacing: 0.25em;
+  margin-bottom: 2rem;
+}
+.shows-info p {
+  color: #beac74;
+  line-height: 1.8;
+  font-weight: 200;
+}
+#show-img {
+  opacity: 0.8;
+}
+
+/* LIVE SHOWS END */
+
+/* ABOUT US END */
+
+/* PARALAX IMG SECTION START */
+
+#paralax-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./img/hops.jpg);
+  min-height: 40rem;
+  max-height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.8; */
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* PARALAX IMG SECTION END */
+
+.change {
+  height: 100vh;
 }
