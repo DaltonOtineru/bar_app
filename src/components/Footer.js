@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const Footer = () => {
+  useEffect(() => {
+    Aos.init({});
+  }, [3000]);
+
   return (
     <footer>
       <div className="footer-inner">
-        <div className="footer-upper">
+        <div data-aos="fade-right" className="footer-upper">
           <div className="vip">
             <h3 className="title">Join VIP & get updates on special events</h3>
             <div className="email">
@@ -14,7 +20,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-contact">
-          <div className="icons">
+          <div className="icons" data-aos="fade-left">
             <a href="#">
               <i class="fab fa-instagram"></i>
             </a>
@@ -28,7 +34,7 @@ export const Footer = () => {
               <i class="fas fa-envelope"></i>
             </a>
           </div>
-          <div className="footer-add">
+          <div className="footer-add" data-aos="fade-left">
             <p>3615 El Cajon Blvd.</p>
             <p>San Diego, CA 92104</p>
             <p>Open from 5PM - 2AM</p>

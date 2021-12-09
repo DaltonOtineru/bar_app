@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "../img/beer.jpg";
 import Image2 from "../img/show.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const About = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, [3000]);
+
   return (
     <div className="about-wrap">
       <div className="about-inner">
-        <div className="top-info">
+        <div data-aos="fade-up" className="top-info">
           <h3 className="title">ABOUT</h3>
           <h3 className="institution">YOUR NEIGHBORHOOD INSITUTION</h3>
           <p>
@@ -17,8 +25,13 @@ export const About = () => {
           </p>
         </div>
         <div className="happyhr-container">
-          <img src={Image} alt="bartender pouring a beer" id="beer-img" />
-          <div className="happyhr-info">
+          <img
+            data-aos="fade-right"
+            src={Image}
+            alt="bartender pouring a beer"
+            id="beer-img"
+          />
+          <div className="happyhr-info" data-aos="fade-left">
             <h3 className="title">HAPPY HOUR</h3>
             <h3 className="beer-tuesday">CRAFT BEER TUESDAY</h3>
             <p>
@@ -30,7 +43,7 @@ export const About = () => {
           </div>
         </div>
         <div className="shows-container">
-          <div className="shows-info">
+          <div className="shows-info" data-aos="fade-right">
             <h3 className="title">MUSIC</h3>
             <h3 className="next-show">NEXT SHOW: MESETA</h3>
             <p>
@@ -40,7 +53,12 @@ export const About = () => {
               tell a story and let your users know a little more about you.
             </p>
           </div>
-          <img src={Image2} alt="live show at the bar" id="show-img" />
+          <img
+            data-aos="fade-left"
+            src={Image2}
+            alt="live show at the bar"
+            id="show-img"
+          />
         </div>
       </div>
     </div>
