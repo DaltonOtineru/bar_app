@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 export const Header = () => {
   return (
     <header id="header-container">
-      <div className="logo">Bar Logo</div>
+      <div className="logo">SODA BAR</div>
       <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
