@@ -13,7 +13,7 @@ import "./App.css";
 
 const mapStyles = {
   width: "100%",
-  height: "50%",
+  height: "100%",
   marginBottom: 0,
 };
 class App extends Component {

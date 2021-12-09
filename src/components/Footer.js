@@ -15,10 +15,18 @@ export const Footer = () => {
         </div>
         <div className="footer-contact">
           <div className="icons">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fas fa-envelope"></i>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
           <div className="footer-add">
             <p>3615 El Cajon Blvd.</p>

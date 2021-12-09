@@ -34,11 +34,12 @@ nav {
   margin-top: auto;
   margin-bottom: auto;
 }
-a {
+nav a {
   text-decoration: none;
   padding: 0 2rem;
   color: #beac74;
   font-weight: 300;
+  transition: all 0.3s ease-in-out;
 }
 a:hover {
   color: #fff;
@@ -313,6 +314,12 @@ a:hover {
   border-radius: 0%;
   padding: 15px 40px;
   font-weight: 300;
+  cursor: pointer;
+}
+.book-now:hover {
+  background-color: #fff;
+  color: #beac74;
+  transition: all 0.3s ease-in-out;
 }
 select option {
   direction: ltr;
@@ -328,13 +335,16 @@ select > option {
   width: 100vw !important;
   height: 50vh !important;
   margin-bottom: 0;
+  overflow: hidden;
 }
-
+.map {
+  max-height: 50vh;
+}
 /* FOOTER SECTION START */
 
 footer {
   background: url(./img/specks.webp);
-  height: 50vh;
+  height: 40vh;
   margin-bottom: 0;
   /* display: flex;
   justify-content: center;
@@ -350,7 +360,7 @@ footer {
   margin-right: auto;
 }
 .footer-upper {
-  padding: 3rem 6rem;
+  padding: 0 6rem;
 }
 .email {
   /* display: flex;
@@ -372,6 +382,12 @@ footer {
   background: #beac74;
   border: none;
   font-size: 1rem;
+  cursor: pointer;
+}
+.email button:hover {
+  background-color: #fff;
+  color: #beac74;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-contact {
@@ -389,9 +405,17 @@ footer {
   padding: 1rem;
 }
 .footer-add {
-  color: #beac74;
+  color: #fff;
   line-height: 1.8;
   padding: 1rem;
   font-weight: 300;
+}
+.footer a {
+  padding: 0px !important;
+  cursor: pointer;
+}
+.icons i:hover {
+  color: #fff;
+  transition: all 0.4s ease-in-out;
 }
 /* FOOTER SECTION END */
