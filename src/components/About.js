@@ -6,15 +6,19 @@ import "aos/dist/aos.css";
 
 export const About = () => {
   useEffect(() => {
-    Aos.init({
-      once: true,
-    });
-  }, [3000]);
+    Aos.init({});
+  }, []);
 
   return (
     <div className="about-wrap">
       <div className="about-inner">
-        <div data-aos="fade-up" className="top-info">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="300"
+          data-aos-once="true"
+          className="top-info"
+        >
           <h3 className="title">ABOUT</h3>
           <h3 className="institution">YOUR NEIGHBORHOOD INSITUTION</h3>
           <p>
@@ -27,11 +31,20 @@ export const About = () => {
         <div className="happyhr-container">
           <img
             data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-once="true"
             src={Image}
             alt="bartender pouring a beer"
             id="beer-img"
           />
-          <div className="happyhr-info" data-aos="fade-left">
+          <div
+            className="happyhr-info"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             <h3 className="title">HAPPY HOUR</h3>
             <h3 className="beer-tuesday">CRAFT BEER TUESDAY</h3>
             <p>
@@ -43,7 +56,13 @@ export const About = () => {
           </div>
         </div>
         <div className="shows-container">
-          <div className="shows-info" data-aos="fade-right">
+          <div
+            className="shows-info"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             <h3 className="title">MUSIC</h3>
             <h3 className="next-show">NEXT SHOW: MESETA</h3>
             <p>
@@ -55,6 +74,9 @@ export const About = () => {
           </div>
           <img
             data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-once="true"
             src={Image2}
             alt="live show at the bar"
             id="show-img"
