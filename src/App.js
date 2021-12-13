@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Paralax } from "./components/Paralax";
+import { Menu } from "./components/Menu";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import ReactDOM from "react-dom";
@@ -29,6 +30,9 @@ class App extends Component {
         </section>
         <section>
           <Paralax />
+        </section>
+        <section id="menu-section">
+          <Menu />
         </section>
         <section>
           <Contact />

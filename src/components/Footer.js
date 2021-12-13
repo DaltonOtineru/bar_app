@@ -12,7 +12,7 @@ export const Footer = () => {
       <div className="footer-inner">
         <div
           data-aos="fade-right"
-          data-aos-duration="2000"
+          data-aos-duration="3000"
           data-aos-delay="500"
           className="footer-upper"
           data-aos-once="true"
@@ -28,7 +28,7 @@ export const Footer = () => {
         <div
           className="footer-contact"
           data-aos="fade-left"
-          data-aos-duration="2000"
+          data-aos-duration="3000"
           data-aos-delay="500"
           data-aos-once="true"
         >

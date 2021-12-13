@@ -40,6 +40,8 @@ nav a {
   color: #beac74;
   font-weight: 300;
   transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-size: 1.1rem;
 }
 a:hover {
   color: #fff;
@@ -94,6 +96,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   min-width: 445px;
+  max-width: 454px;
+  border: none !important;
 }
 
 .border span {
@@ -105,7 +109,7 @@ a:hover {
 .border h1 {
   color: #fff;
   margin-bottom: 0;
-  line-height: 1.1;
+  line-height: 1;
   font-size: 80px;
 }
 .est {
@@ -242,6 +246,62 @@ a:hover {
 }
 
 /* PARALAX IMG SECTION END */
+
+/* MENU SECTION START */
+
+#menu-section {
+  background: url(./img/specks.webp);
+}
+#menu-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem;
+}
+#menu-items {
+  margin: 0 auto;
+  justify-content: center;
+}
+#menu-item {
+  max-width: 300px;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+}
+#menu-item p {
+  line-height: 1.7;
+  font-weight: 300;
+}
+#menu-header {
+  color: #fff;
+  font-size: 32px;
+  letter-spacing: 0.25em;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+#cocktail-head {
+  color: #beac74;
+  border-bottom: 3px solid #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.2em;
+}
+.drink-name {
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-weight: 500 !important;
+}
+.dr-description {
+  color: #beac74;
+}
+#beer-name {
+  margin-bottom: 0;
+}
+.beer-co {
+  color: #fff;
+  font-weight: 200 !important;
+}
+
+/* MENU SECTION END */
 
 /* CONTACT US SECTION START */
 
