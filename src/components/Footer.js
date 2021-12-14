@@ -47,8 +47,8 @@ export const Footer = () => {
             </a>
           </div>
           <div className="footer-add">
-            <p>3615 El Cajon Blvd.</p>
-            <p>San Diego, CA 92104</p>
+            <p id="add1">3615 El Cajon Blvd. </p>
+            <p id="add2"> San Diego, CA 92104</p>
             <p>Open from 5PM - 2AM</p>
             <p>info@sodabarpresents.com</p>
             <p>619-955-5551</p>

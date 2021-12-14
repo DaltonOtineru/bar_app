@@ -19,7 +19,9 @@ export const About = () => {
           data-aos-once="true"
           className="top-info"
         >
-          <h3 className="title">ABOUT</h3>
+          <h3 className="title" ID="about-title">
+            ABOUT
+          </h3>
           <h3 className="institution">YOUR NEIGHBORHOOD INSITUTION</h3>
           <p>
             I'm a paragraph. Click here to add your own text and edit me. It’s
