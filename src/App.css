@@ -26,12 +26,16 @@ body {
   text-decoration: none;
   padding: 0rem 1rem;
   text-transform: uppercase;
+  transition: all 0.4s ease-in-out !important;
+  border-right: 1px solid #fff;
 }
 .navbar-nav .nav-item .nav-link:hover {
   color: #fff;
   text-decoration: none;
+  transition: all 0.4s ease-in-out !important;
   /* font-weight: 600; */
 }
+
 /* header {
   
   overflow: auto;
@@ -213,7 +217,7 @@ a:hover {
   font-weight: 200;
 }
 #beer-img {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 /* HAPPY HOUR END */
 
@@ -243,9 +247,11 @@ a:hover {
   font-weight: 200;
 }
 #show-img {
-  opacity: 0.8;
+  opacity: 0.7;
 }
-
+.show-date {
+  font-weight: 400;
+}
 /* LIVE SHOWS END */
 
 /* ABOUT US END */
@@ -337,19 +343,61 @@ a:hover {
 .cb-inner-wrap {
   display: flex;
   align-items: flex-start;
-  height: 550px;
+  min-height: 550px;
 }
 .contact {
-  max-width: 625px;
+  max-width: 500px;
+  width: 490px;
   padding: 6rem 4rem;
-  margin-top: auto;
   margin-bottom: auto;
 }
 .contact h3 {
   color: #fff;
   font-size: 32px;
   letter-spacing: 0.25em;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.contact-boxes input,
+.contact-boxes textarea {
+  display: block;
+  width: 100%;
+  border-color: #fff;
+  background: #06101b;
+  resize: none;
+  color: #beac74;
+  min-width: 300px;
+}
+.contact-boxes input::placeholder,
+.contact-boxes textarea::placeholder {
+  color: #fff;
+  opacity: 1;
+  font-weight: 100;
+}
+.contact-boxes input {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+}
+.contact-boxes textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.send-message {
+  border-radius: 0%;
+  padding: 15px 40px;
+  font-weight: 300;
+  cursor: pointer;
+  background-color: #beac74;
+  color: #000;
+  border: none;
+  width: 100%;
+  margin-top: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+.send-message:hover {
+  background-color: #fff;
+  color: #beac74;
+  transition: all 0.4s ease-in-out;
 }
 .contact p {
   width: 380px;
@@ -366,11 +414,12 @@ a:hover {
   letter-spacing: 0.05em;
 }
 .book {
-  max-width: 625px;
+  max-width: 500px;
+  width: 490px;
   display: flex;
   flex-direction: column;
   padding: 6rem 4rem;
-  margin-top: 2.75rem;
+  margin-bottom: auto;
 }
 .book h3 {
   padding-bottom: 1rem;
@@ -378,7 +427,7 @@ a:hover {
 .dropdowns {
   display: flex;
   flex-direction: column;
-  min-width: 275px;
+  min-width: 300px;
 }
 .dropdowns select {
   padding: 0.75rem 9rem 0.75rem 1rem;
@@ -388,18 +437,32 @@ a:hover {
   text-align-last: left;
   color: #fff;
 }
+.dropdowns input {
+  background: #06101b;
+  border-style: solid;
+  border-radius: none;
+  border-color: #fff;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 9rem 0.5rem 1rem;
+  color: #fff;
+  opacity: 1;
+}
+.dropdowns input::placeholder {
+  opacity: 1;
+}
 .book-now {
-  background: rgb(162, 146, 99);
+  background: #beac74;
   border: none;
   border-radius: 0%;
   padding: 15px 40px;
   font-weight: 300;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .book-now:hover {
   background-color: #fff;
   color: #beac74;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 select option {
   direction: ltr;
@@ -443,7 +506,19 @@ footer {
 .footer-upper {
   padding: 0 6rem;
 }
-
+.footer-a {
+  text-decoration: none;
+  color: #beac74;
+  display: block;
+  transition: all 0.4s ease-in-out;
+}
+.footer-a:hover {
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+#footer-email {
+  margin-bottom: 1rem;
+}
 .email input {
   padding: 0.5rem 4rem;
   border: 1px solid #fff;
@@ -461,11 +536,12 @@ footer {
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .email button:hover {
   background-color: #fff;
   color: #beac74;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .fab {
@@ -478,6 +554,7 @@ footer {
 }
 .icons i {
   padding: 1rem;
+  transition: all 0.4s ease-in-out;
 }
 .footer-add {
   color: #fff;
@@ -497,9 +574,137 @@ footer {
 
 /****** MEDIA QUERIES START *******/
 
-/* ABOUT MEDIA QUERIES START */
+/* SMALLER MOBILE MEDIA QUERIES START */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 399px) {
+  .soda {
+    margin: 0 auto !important;
+    padding-left: 5rem;
+  }
+  .hero-img {
+    background-attachment: scroll;
+  }
+
+  .border {
+    min-width: 310px;
+    /* max-width: 454px */
+    min-height: 150px;
+  }
+  .border h1 {
+    font-size: 35px;
+    line-height: 1.1;
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .inner {
+    padding: 0.5rem 1rem;
+  }
+  .inner span {
+    font-size: 1rem;
+  }
+  #soda-hero {
+    padding-right: 0.15em;
+  }
+  #bar-hero {
+    padding-left: 0.15em;
+  }
+  .est {
+    font-size: 0.9rem;
+  }
+  #paralax-img {
+    background-attachment: scroll;
+  }
+  .top-info {
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  .happyhr-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .shows-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .happyhr-info {
+    padding-left: 0;
+  }
+  .shows-info {
+    padding-right: 0;
+  }
+  .about-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .institution {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  .cb-inner-wrap {
+    min-height: 85vh;
+    align-items: center;
+    display: block;
+    max-width: 90%;
+  }
+  .contact {
+    padding: 1rem 0rem 0rem 0rem;
+    margin: 0 auto;
+  }
+  .contact-info {
+    letter-spacing: 0;
+  }
+  .contact p {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .book {
+    padding: 2rem 0rem 4rem 0rem;
+    margin-top: 0;
+  }
+  .footer-inner {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    align-items: center !important;
+    min-height: 60vh;
+  }
+  .footer-upper {
+    padding: 1rem 2rem 3rem 2rem !important;
+  }
+  .icons {
+    text-align: center;
+  }
+  #add1 {
+    display: inline-block;
+    padding-right: 0.2em;
+  }
+  #add2 {
+    display: inline-block;
+  }
+  .email {
+    display: flex !important;
+  }
+  .email input {
+    padding: 0.25rem 3rem 0.25rem 0.25rem;
+    max-width: 70% !important;
+  }
+  .email button {
+    padding: 0.25rem 1.25rem;
+    margin-top: 0rem;
+    font-size: 0.75rem;
+    max-width: 30% !important;
+  }
+  .vip {
+    padding: 0 !important;
+  }
+}
+/* SMALLER MOBILE MEDIA QUERIES END */
+
+/* LARGER MOBILE MEDIA QUERIES START */
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
   .soda {
     margin: 0 auto !important;
     padding-left: 7rem;
@@ -514,7 +719,7 @@ footer {
     min-height: 250px;
   }
   .border h1 {
-    font-size: 30px;
+    font-size: 37px;
     line-height: 1.1;
     display: inline-block;
     padding-top: 0.5rem;
@@ -613,7 +818,9 @@ footer {
     padding: 0 !important;
   }
 }
+/* LARGER MOBILE MEDIA QUERIES END */
 
+/* TABLET MEDIA QUERIES START */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .hero-img {
     background-attachment: scroll;
@@ -676,6 +883,7 @@ footer {
     padding: 3rem 0rem 1rem 0rem;
     max-width: 60% !important;
   }
+
   .vip {
     padding-top: 5rem;
   }
@@ -692,6 +900,12 @@ footer {
     margin-top: 1rem;
   }
 }
-/* ABOUT MEDIA QUERIES END */
 
+/* TABLET MEDIA QUERIES END */
+
+@media only screen and (max-width: 991px) {
+  .navbar-nav .nav-item .nav-link {
+    border: none !important;
+  }
+}
 /****** MEDIA QUERIES END ********/

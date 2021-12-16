@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Component } from "react";
+
 import Image from "../img/beer.jpg";
 import Image2 from "../img/show.jpg";
 import Aos from "aos";
@@ -10,7 +11,7 @@ export const About = () => {
   }, []);
 
   return (
-    <div className="about-wrap">
+    <div className="about-wrap" id="about">
       <div className="about-inner">
         <div
           data-aos="fade-up"
@@ -20,14 +21,13 @@ export const About = () => {
           className="top-info"
         >
           <h3 className="title" ID="about-title">
-            ABOUT
+            ABOUT US
           </h3>
-          <h3 className="institution">YOUR NEIGHBORHOOD INSITUTION</h3>
+          <h3 className="institution">YOUR FAVORITE BAR & VENUE</h3>
           <p>
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. I’m a great place for you to
-            tell a story and let your users know a little more about you.
+            We've been here in San Diego for over 20 years to bring you all
+            amazing drinks and even more amazing music. Come in and catch a show
+            or grab a drink and join the Soda Bar family!
           </p>
         </div>
         <div className="happyhr-container">
@@ -50,10 +50,11 @@ export const About = () => {
             <h3 className="title">HAPPY HOUR</h3>
             <h3 className="beer-tuesday">CRAFT BEER TUESDAY</h3>
             <p>
-              I'm a paragraph. Click here to add your own text and edit me. It’s
-              easy. Just click “Edit Text” or double click me to add your own
-              content and make changes to the font. I’m a great place for you to
-              tell a story and let your users know a little more about you.
+              Every tuesday, all of the amazing craft beers we serve will be
+              half off, all day! Come in and enjoy some of the amazing local
+              beers we currently have to offer. We get new craft and local beers
+              in frequently so there's always a new, refreshing beer to try from
+              our rotation of taps!
             </p>
           </div>
         </div>
@@ -66,12 +67,14 @@ export const About = () => {
             data-aos-once="true"
           >
             <h3 className="title">MUSIC</h3>
-            <h3 className="next-show">NEXT SHOW: MESETA</h3>
+            <h3 className="next-show">NEXT SHOW: MESETA </h3>
+
             <p>
-              I'm a paragraph. Click here to add your own text and edit me. It’s
-              easy. Just click “Edit Text” or double click me to add your own
-              content and make changes to the font. I’m a great place for you to
-              tell a story and let your users know a little more about you.
+              <span className="show-date">Friday December 31st at 8pm</span>,
+              come ring in the new year at Soda Bar and jam out to Meseta.
+              They'll be performing songs from their recently released album
+              "Changes", as well as playing some new, unreleased music. All
+              drinks will be half off during the show!
             </p>
           </div>
           <img

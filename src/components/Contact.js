@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Component } from "react";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 // import { TableDatePicker } from "./TableDatePicker";
@@ -13,7 +14,7 @@ export const Contact = () => {
   }, []);
 
   return (
-    <div className="contact-book">
+    <div className="contact-book" id="contact">
       <div className="cb-inner-wrap">
         <div
           className="contact"
@@ -23,14 +24,30 @@ export const Contact = () => {
           data-aos-once="true"
         >
           <h3>CONTACT US</h3>
-          <p>
+          <div className="contact-boxes">
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email Address"
+              autocomplete="off"
+              required
+            />
+            <textarea
+              name="message"
+              rows="4"
+              className="messageBox"
+              placeholder="Send us a message"
+            ></textarea>
+          </div>
+          <button className="send-message">SEND MESSAGE</button>
+          {/* <p>
             I'm a paragraph. Click here to add your own text and edit me. It’s
             easy. Just click “Edit Text” or double click me to add your own
             content.
           </p>
           <div className="contact-info">
             619-955-5551 | info@sodabarpresents.com
-          </div>
+          </div> */}
         </div>
         <div
           className="book"
@@ -42,6 +59,13 @@ export const Contact = () => {
           <h3 className="title">BOOK A TABLE</h3>
           <div className="dropdowns">
             {/* <DatePicker onChange={onChange} value={value} /> */}
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email Address"
+              autocomplete="off"
+              required
+            />
             <select>
               <option value="" disabled selected>
                 Date

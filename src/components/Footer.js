@@ -34,24 +34,32 @@ export const Footer = () => {
         >
           <div className="icons">
             <a href="#">
-              <i class="fab fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </a>
             <a href="#">
-              <i class="fab fa-facebook-square"></i>
+              <i className="fab fa-facebook-square"></i>
             </a>
             <a href="#">
-              <i class="fab fa-twitter-square"></i>
+              <i className="fab fa-twitter-square"></i>
             </a>
             <a href="#">
-              <i class="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>
             </a>
           </div>
           <div className="footer-add">
             <p id="add1">3615 El Cajon Blvd. </p>
             <p id="add2"> San Diego, CA 92104</p>
-            <p>Open from 5PM - 2AM</p>
-            <p>info@sodabarpresents.com</p>
-            <p>619-955-5551</p>
+            <p>Open from 8PM - 2AM</p>
+            <a
+              className="footer-a"
+              id="footer-email"
+              href="mailto:info@sodabarpresents.com"
+            >
+              info@sodabarpresents.com
+            </a>
+            <a href="tel:6199555551" className="footer-a">
+              619-955-5551
+            </a>
           </div>
         </div>
       </div>
