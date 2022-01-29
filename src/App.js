@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useRef } from "react";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
@@ -6,6 +6,7 @@ import { Paralax } from "./components/Paralax";
 import { Menu } from "./components/Menu";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { ScrollButton } from "./components/ScrollButton";
 import ReactDOM from "react-dom";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 import "./App.css";
@@ -18,14 +19,26 @@ const mapStyles = {
   marginBottom: 0,
 };
 class App extends Component {
+  // constructor(props) {
+  //   super(props);
+
+  //   const aboutSection = useRef(null);
+
+  //   const goToAboutSection = () =>
+  //     window.scrollTo({
+  //       top: aboutSection.current.offSetTop,
+  //       behavior: "smooth",
+  //     });
+  // }
+
   render() {
     return (
-      <div>
+      <div id="top">
         <Header />
         <section className="hero-section">
           <Hero />
         </section>
-        <section>
+        <section id="about-section">
           <About />
         </section>
         <section>
@@ -52,6 +65,7 @@ class App extends Component {
         <section>
           <Footer />
         </section>
+        <ScrollButton />
       </div>
     );
   }

@@ -7,6 +7,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* scroll to top arrow  */
+
+#arrow-wrap {
+  position: fixed;
+  right: 40px;
+  bottom: 70px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: #beac74;
+}
+#up-arrow {
+  font-size: 3rem;
+  color: #beac74;
+  bottom: 40px;
+}
+
+/* scroll to top arrow  */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -16,10 +35,11 @@ body {
   background: url(./img/specks.webp);
   padding: 1rem 0rem;
 }
-.soda {
+.navbar-header .soda {
   color: #beac74;
   font-size: 2rem;
   letter-spacing: 0.1em;
+  cursor: pointer;
 }
 .navbar-nav .nav-item .nav-link {
   color: #beac74;
@@ -28,6 +48,7 @@ body {
   text-transform: uppercase;
   transition: all 0.4s ease-in-out !important;
   border-right: 1px solid #fff;
+  cursor: pointer;
 }
 .navbar-nav .nav-item .nav-link:hover {
   color: #fff;
@@ -444,7 +465,7 @@ a:hover {
   border-color: #fff;
   margin-bottom: 1.5rem;
   padding: 0.5rem 9rem 0.5rem 1rem;
-  color: #fff;
+  color: #beac74;
   opacity: 1;
 }
 .dropdowns input::placeholder {
@@ -495,7 +516,7 @@ footer {
 }
 .footer-inner {
   height: 100%;
-  max-width: 60%;
+  /* max-width: 60%; */
   display: flex;
   align-items: baseline;
   justify-content: center;
